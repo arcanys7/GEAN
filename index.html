@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GEAN</title><link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#f3e8ff"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="GEAN">
+<link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="icon" href="icon-192.png" type="image/png"><link rel="stylesheet" href="styles.css"></head>
+<body><main>
+<header><h1>GEAN</h1><span id="stage" class="chip"></span><span id="dayn" class="chip"></span><button id="bSet" class="ghost" aria-label="Settings">⚙</button></header>
+<div id="warn" hidden></div>
+<section class="hero"><div id="bubble" role="status" aria-live="polite"></div>
+<button id="pet" aria-label="Tap GEAN"><i class="eye l"></i><i class="eye r"></i><i class="mouth"></i></button>
+<div id="mood" class="chip"></div></section>
+<section id="home">
+<h2>What are we doing?</h2><div id="acts"></div>
+<div class="row"><button id="bWatch" class="big">▶ Watch Together</button><button id="bRep" class="big alt">📊 Mirror Report</button></div>
+<h2>Recent check-ins</h2><ul id="recent"></ul><p id="obs" class="note"></p>
+</section>
+<section id="watch" hidden><h2>Watch Together</h2><div id="timer">0:00</div><p id="reels" class="note"></p>
+<button id="bNext" class="big">Next reel ⏭</button>
+<div class="row"><button id="bPause" class="big alt">Pause</button><button id="bEnd" class="big alt">End</button></div></section>
+</main>
+<dialog id="dRep"><h2>Mirror Report</h2><div id="repBody"></div><button class="big" data-close>Close</button></dialog>
+<dialog id="dSet"><h2>Settings &amp; privacy</h2>
+<p class="note">GEAN records only: when you open it, the check-ins you tap, and Watch Together durations. It cannot see other apps. Everything stays on this device in IndexedDB. No accounts, analytics or servers.</p>
+<div class="row"><button id="bExp" class="big alt">Export JSON</button><button id="bDel" class="big danger">Delete all data</button></div>
+<button class="big" data-close>Close</button></dialog>
+<script src="app.js"></script></body></html>
